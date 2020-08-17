@@ -1,0 +1,117 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #fece0c; ;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 500px;
+	background: #fff;
+	padding: 25px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+	
+}	
+.container h1
+{
+	text-align: center;
+	margin: 0 0 40px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	padding: 0;
+	color: rgb(66,133,244);
+	letter-spacing: 2px;
+}
+.container input
+{
+	padding: 5px;
+	margin-bottom: 30px;
+	width: 55%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border:none;
+	border-bottom: 2px solid #999;
+}
+.container input[type="submit"]
+{
+	border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.container input[type="reset"]
+{
+	border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.container input[type="submit"]:hover
+{
+	background: #34F458;
+	color: #fff;
+}
+.container input[type="reset"]:hover
+{
+	background: #34F458;
+	color: #fff;
+}
+.container form div
+{
+	position: relative;
+}
+.container form div label
+{
+	position: absolute;
+	top: 3px;
+	pointer-events: none;
+	left: 0;
+	transition: .5s;
+}
+.container input:focus ~label,
+.container input:valid ~label
+{
+	left: 0;
+	top: -20px;
+	color: rgb(66,133,244);
+	font-size: 12px;
+	font-weight: bold;
+}
+.container input:focus,
+.container input:valid
+{
+	border-bottom:  2px solid rgb(66,133,244);
+}
+.error_form
+{
+	top: 12px;
+	color: rgb(216, 15, 15);
+    font-size: 15px;
+    font-family: Helvetica;
+} 
